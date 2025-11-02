@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Steve</title>
+    <link rel="stylesheet" href="c2.css">
+     <link rel="shortcut icon" href="home (1).png"/>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+     <script src="https://kit.fontawesome.com/5d3d3d9c28.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+    <!-- Fixed Theme Toggle -->
+   
+
+    <!-- Navigation -->
+    <header id="mainNav">
+        <div class="container">
+            <nav>
+                <div class="logo">DevSteve</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="profile-image-container">
+                 <button class="fixed-theme-toggle" onclick="toggleTheme()" id="fixedThemeToggle">🌙</button>
+                <!-- Replace the src below with your image URL -->
+                <!-- <img src="your-image-url.jpg" alt="Profile" class="profile-image"> -->
+                <!-- Placeholder shown when no image is provided -->
+                <div class="profile-placeholder">
+                    <img src="me.jpeg" alt="Ethan Kariuki" class="profile-image">
+                </div>
+            </div>
+            <h1>Stephen Kariuki</h1>
+            <p class="tagline">Building modern, responsive, and user-friendly web applications</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary slide-in-left">View My Work</a>
+                <a href="#contact" class="btn btn-secondary slide-in-right">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-left="Skills &" data-right="Technologies">
+                <span class="title-word-left">Skills &</span>
+                <span class="title-word-right">Technologies</span>
+            </h2>
+            <div class="skills-grid">
+                <!-- <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                </div> -->
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS/Tailwind</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎗</div>
+                    <h3>API</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Git/GitHub</h3>
+                </div>
+                 <div class="skill-card">
+                    <div class="skill-icon">💥</div>
+                    <h3>Firebase</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-left="Featured" data-right="Projects">
+                <span class="title-word-left">Featured</span>
+                <span class="title-word-right">Projects</span>
+            </h2>
+            <div class="projects-grid">
+                  <div class="project-card">
+                    <!-- <div class="project-image">🛒</div> -->
+                    <div class="project-content">
+                        <h3 class="project-title">View Them?</h3>
+                        <p class="project-description">"I’m currently finishing up some clean demos to share with you. I’ll send over a few sample links shortly so you can get a feel for my work style."
+                            <b>Reach me by contant to have a glimpse of them</b>
+                            <hr>
+                            <b>Launching soon🔰</b>
+                        </p>
+                        <!-- <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div> -->
+                        <!-- <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🛒</div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A full-stack e-commerce solution with cart functionality, payment integration, and admin dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card">
+                    <div class="project-image">💬</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real-Time Chat App</h3>
+                        <p class="project-description">WebSocket-based chat application with rooms, direct messaging, and file sharing capabilities.</p>
+                        <div class="project-tags">
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management System</h3>
+                        <p class="project-description">Kanban-style project management tool with drag-and-drop, team collaboration, and analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" data-left="Experience &" data-right="Education">
+                <span class="title-word-left">Experience &</span>
+                <span class="title-word-right">Education</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - Present</div>
+                    <h3 class="timeline-title">Freelance Web Developer</h3>
+                    <p class="timeline-company">Self-Employed</p>
+                    <p>1 .Building custom web applications for clients across various industries.<br>
+                        <br><p class="timeline-company">Education</p>
+                         2 .I am on the path to becoming a Full-Stack Developer, committed to advancing my problem-solving skills so we can all embrace the modern digital world together."
+                    </p>
+                </div>
+               
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <h3 class="timeline-title">Junior Web Developer</h3>
+                    <p class="timeline-company">Tech Solutions Inc.</p>
+                    <p>Developed and maintained client websites, collaborated with design team, and implemented responsive designs using Javascript/Html and Tailwind CSS.</p>
+                </div>
+
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title" data-left="Let's" data-right="Connect">
+                <span class="title-word-left">Let's</span>
+                <span class="title-word-right">Connect</span>
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <!-- <a href="mailto:your.email@example.com">your.email@example.com</a> -->
+                    <a href="tel:gmtrisen@gmail.com">gmtrisen@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <a href="#">linkedin.com/in/yourprofile</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/gmtrisen">https://github.com/gmtrisen</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call</h3>
+                    <a href="tel:+254702105515">+254 702105515</a>
+                    <!-- <a href="#">@yourhandle</a> -->
+                </div>
+            </div>
+            
+            <div class="resume-download" style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="resume-btn" onclick="downloadResume(event)">
+                    <span class="resume-icon">📄</span>
+                    Download Resume
+                </a>
+            </div>
+            
+        </div>
+         <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h4>Get in touch  </h4>
+                
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="9aa6159e-c653-44c7-b2c7-52b4dd05be12">
+         <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+         <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+         <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+         <button type="submit">Submit<img src="ifont.svg" alt=""></button>
+
+        </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <footer>
+  <div class="footer-container">
+
+    <!--logo-container-->
+    <div class="footer-logo-container">
+     <!--logo------>
+     <div class="footer-logo">More</div>
+     <!--text--->
+      <span>for urgent || my projects</span>
+      <!--social-->
+
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+<!--footer-menu------------->
+<div class="footer-menu">
+
+
+
+  <!--footer-menu-box-->
+  <!-- <div class="footer-menu-box"> -->
+      <!-- <strong>call</strong> -->
+
+      <!-- <ul>
+        <li><a href="tel:+254702105515"><i class="fa fa-phone"></i>call</a></li>
+       
+      </ul>
+     
+  </div> -->
+
+  <!--footer-menu-box-->
+  <!-- <div class="footer-menu-box"> -->
+      <!-- <strong>email</strong> -->
+
+      <!-- <ul>
+        <li><a href="tel:gmtrisen@gmail.com"><i class="fas fa-envelope"></i>email</a></li>
+       
+      </ul> -->
+      <!-- <p><i class="fas fa-envelope"></i> info@novabaraka.com</p>
+        <p><a href="tel:+254702105515">07 021 05515</a> <i class="fa fa-phone"></i></p>
+        <p><i class="fas fa-map-marker-alt"></i>Witeithie, Juja <br>Kibute area<br>Opposite Kafufe flats</p>
+      -->
+  <!-- </div> -->
+
+  <div class="footer-menu-box">
+      <!-- <strong>location</strong> -->
+
+      <ul>
+        
+        <li><i class="fas fa-map-marker-alt"></i>Kiambu,Kenya.</li>
+      </ul>
+     
+  </div>
+
+
+
+
+
+
+  </div>
+
+</footer>
+
+<!--copyright------->
+<span class="copyright">&copy; 2025 Web Developer Portfolio. Built with passion and code.</span>
+
+        <!-- <div class="container">
+            <p>&copy; 2025 Web Developer Portfolio. Built with passion and code.</p>
+        </div> -->
+    </footer>
+
+    <!-- Hidden Resume PDF Content
+    <div id="resumePDF">
+        <div class="pdf-header">
+            <h1>Your Full Name</h1>
+            <p>📧 your.email@example.com | 📱 +123 456 7890</p>
+            <p>💼 linkedin.com/in/yourprofile | 🐙 github.com/yourusername</p>
+            <p>🌐 yourportfolio.com</p>
+        </div>
+
+        <div class="pdf-section">
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <p>Passionate and skilled web developer with 3+ years of experience building modern, responsive web applications. Proficient in React, Node.js, and full-stack development. Strong problem-solving abilities and commitment to writing clean, maintainable code. Dedicated to creating exceptional user experiences and staying current with emerging technologies.</p>
+        </div>
+
+        <div class="pdf-section">
+            <h2>TECHNICAL SKILLS</h2>
+            <div class="pdf-skills">
+                <span class="pdf-skill-tag">React</span>
+                <span class="pdf-skill-tag">JavaScript (ES6+)</span>
+                <span class="pdf-skill-tag">TypeScript</span>
+                <span class="pdf-skill-tag">HTML5</span>
+                <span class="pdf-skill-tag">CSS3</span>
+                <span class="pdf-skill-tag">Tailwind CSS</span>
+                <span class="pdf-skill-tag">Node.js</span>
+                <span class="pdf-skill-tag">Express.js</span>
+                <span class="pdf-skill-tag">MongoDB</span>
+                <span class="pdf-skill-tag">MySQL</span>
+                <span class="pdf-skill-tag">Git & GitHub</span>
+                <span class="pdf-skill-tag">RESTful APIs</span>
+                <span class="pdf-skill-tag">Responsive Design</span>
+                <span class="pdf-skill-tag">Agile/Scrum</span>
+            </div>
+        </div>
+
+        <div class="pdf-section">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="pdf-job">
+                <h3>Freelance Web Developer</h3>
+                <p class="job-meta">Self-Employed | 2023 - Present</p>
+                <ul>
+                    <li>Developed custom web applications for 10+ clients across various industries including e-commerce, healthcare, and education</li>
+                    <li>Specialized in React and Node.js full-stack solutions, delivering scalable and maintainable code</li>
+                    <li>Implemented responsive designs ensuring cross-browser compatibility and mobile-first approach</li>
+                    <li>Collaborated directly with clients to gather requirements, provide technical guidance, and deliver solutions on time</li>
+                    <li>Achieved 95% client satisfaction rate with positive reviews and repeat business</li>
+                </ul>
+            </div>
+
+            <div class="pdf-job">
+                <h3>Junior Web Developer</h3>
+                <p class="job-meta">Tech Solutions Inc. | 2022 - 2023</p>
+                <ul>
+                    <li>Built and maintained client websites using React, JavaScript, and modern web technologies</li>
+                    <li>Worked closely with design team to implement pixel-perfect UI/UX from Figma mockups</li>
+                    <li>Optimized website performance resulting in 40% faster load times through code splitting and lazy loading</li>
+                    <li>Participated in code reviews, sprint planning, and daily stand-ups following Agile methodology</li>
+                    <li>Mentored junior developers and contributed to internal documentation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pdf-section">
+            <h2>EDUCATION</h2>
+            <div class="pdf-job">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="job-meta">University Name | 2019 - 2022 | GPA: 3.8/4.0 (Honors)</p>
+                <ul>
+                    <li>Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems, Software Engineering, Computer Networks</li>
+                    <li>Senior Project: Developed a real-time collaborative task management application using React and Socket.io</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pdf-section">
+            <h2>KEY PROJECTS</h2>
+            
+            <div class="pdf-project">
+                <h3>E-Commerce Platform | React, Node.js, MongoDB, Stripe API</h3>
+                <ul>
+                    <li>Full-stack application with shopping cart, payment integration, and admin dashboard</li>
+                    <li>Implemented user authentication, product management, and order tracking systems</li>
+                    <li>Integrated Stripe payment gateway for secure transactions</li>
+                </ul>
+            </div>
+
+            <div class="pdf-project">
+                <h3>Real-Time Chat Application | Socket.io, Express, React</h3>
+                <ul>
+                    <li>WebSocket-based chat application with rooms and direct messaging capabilities</li>
+                    <li>Features include real-time messaging, file sharing, and user presence indicators</li>
+                    <li>Deployed on AWS with Redis for session management</li>
+                </ul>
+            </div>
+
+            <div class="pdf-project">
+                <h3>Task Management System | React, TypeScript, Firebase</h3>
+                <ul>
+                    <li>Kanban-style project management tool with drag-and-drop interface</li>
+                    <li>Team collaboration features with real-time updates and analytics dashboard</li>
+                    <li>Implemented role-based access control and data visualization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pdf-section">
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+                <li>Advanced React Development - Udemy (2023)</li>
+                <li>Full-Stack Web Development - freeCodeCamp (2022)</li>
+                <li>JavaScript Algorithms and Data Structures - freeCodeCamp (2021)</li>
+            </ul>
+        </div>
+
+        <div class="pdf-section">
+            <h2>ADDITIONAL INFORMATION</h2>
+            <p><strong>Languages:</strong> English (Fluent), Spanish (Intermediate)</p>
+            <p><strong>Interests:</strong> Open Source Contribution, Tech Blogging, UI/UX Design, Continuous Learning</p>
+        </div>
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        // Generate and Download Resume
+        function downloadResume(e) {
+            e.preventDefault();
+            
+            const element = document.getElementById('resumePDF');
+            const opt = {
+                margin: 10,
+                filename: 'Resume_WebDeveloper.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            // Generate PDF
+            html2pdf().set(opt).from(element).save();
+        }
+
+        // Theme Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggles = document.querySelectorAll('.theme-toggle, .fixed-theme-toggle');
+            
+            body.classList.toggle('dark-mode');
+            
+            themeToggles.forEach(toggle => {
+                if (body.classList.contains('dark-mode')) {
+                    toggle.textContent = '☀️';
+                } else {
+                    toggle.textContent = '🌙';
+                }
+            });
+        }
+
+        // Navigation visibility on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('mainNav');
+            const heroSection = document.getElementById('home');
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+            
+            if (window.scrollY > heroBottom - 100) {
+                header.classList.add('visible');
+            } else {
+                header.classList.remove('visible');
+            }
+            
+            // Add scrolled class for transparency effect
+            if (window.scrollY > heroBottom + 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Element is entering viewport
+                    setTimeout(() => {
+                        entry.target.classList.add('animated');
+                        entry.target.classList.remove('unanimated');
+                        
+                        // Add different animation classes based on element type
+                        if (entry.target.classList.contains('skill-card')) {
+                            entry.target.classList.add('scale-in');
+                        } else if (entry.target.classList.contains('project-card')) {
+                            const cards = document.querySelectorAll('.project-card');
+                            const cardIndex = Array.from(cards).indexOf(entry.target);
+                            if (cardIndex % 2 === 0) {
+                                entry.target.classList.add('fade-left');
+                            } else {
+                                entry.target.classList.add('fade-right');
+                            }
+                        } else if (entry.target.classList.contains('timeline-item')) {
+                            entry.target.classList.add('fade-right');
+                        } else if (entry.target.classList.contains('contact-card')) {
+                            entry.target.classList.add('fade-up');
+                        }
+                    }, index * 100);
+                } else {
+                    // Element is leaving viewport - animate out
+                    entry.target.classList.remove('animated');
+                    entry.target.classList.add('unanimated');
+                    entry.target.classList.remove('scale-in', 'fade-left', 'fade-right', 'fade-up');
+                }
+            });
+        }, observerOptions);
+
+        // Title Animation Observer
+        const titleObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                const leftWord = entry.target.querySelector('.title-word-left');
+                const rightWord = entry.target.querySelector('.title-word-right');
+                
+                if (entry.isIntersecting) {
+                    // Animate in
+                    leftWord.classList.remove('slide-out');
+                    rightWord.classList.remove('slide-out');
+                    leftWord.classList.add('slide-in');
+                    rightWord.classList.add('slide-in');
+                } else {
+                    // Animate out
+                    leftWord.classList.remove('slide-in');
+                    rightWord.classList.remove('slide-in');
+                    leftWord.classList.add('slide-out');
+                    rightWord.classList.add('slide-out');
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Hero Text Animation Observer
+        const heroObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                // Animate CTA buttons
+                const btnPrimary = document.querySelector('.btn-primary');
+                const btnSecondary = document.querySelector('.btn-secondary');
+                
+                if (entry.isIntersecting) {
+                    // Animate in
+                    if (btnPrimary) {
+                        btnPrimary.classList.remove('animate-scroll-out-left');
+                        btnPrimary.classList.add('animate-scroll-left');
+                        btnPrimary.style.opacity = '1';
+                    }
+                    if (btnSecondary) {
+                        btnSecondary.classList.remove('animate-scroll-out-right');
+                        btnSecondary.classList.add('animate-scroll-right');
+                        btnSecondary.style.opacity = '1';
+                    }
+                } else {
+                    // Animate out
+                    if (btnPrimary) {
+                        btnPrimary.classList.remove('animate-scroll-left');
+                        btnPrimary.classList.add('animate-scroll-out-left');
+                    }
+                    if (btnSecondary) {
+                        btnSecondary.classList.remove('animate-scroll-right');
+                        btnSecondary.classList.add('animate-scroll-out-right');
+                    }
+                }
+            });
+        }, {
+            threshold: 0.4,
+            rootMargin: '0px'
+        });
+
+        // Observe all elements that should animate
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll(
+                '.skill-card, .project-card, .timeline-item, .contact-card'
+            );
+            
+            animateElements.forEach(el => {
+                el.classList.add('animate-on-scroll');
+                observer.observe(el);
+            });
+
+            // Observe all section titles
+            const titles = document.querySelectorAll('.section-title');
+            titles.forEach(title => {
+                titleObserver.observe(title);
+            });
+
+            // Observe hero text
+            const heroSection = document.getElementById('home');
+            if (heroSection) heroObserver.observe(heroSection);
+
+            // Initially show buttons on page load
+            const btnPrimary = document.querySelector('.btn-primary');
+            const btnSecondary = document.querySelector('.btn-secondary');
+            if (btnPrimary) btnPrimary.style.opacity = '1';
+            if (btnSecondary) btnSecondary.style.opacity = '1';
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
